@@ -1,0 +1,118 @@
+/* Reset padrão */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+html{
+font-family: Verdana, sans-serif;
+}
+
+.container{
+    background-color: #6c2414
+;
+    width: 300px;
+    height: 300px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+}
+
+
+.body-container{
+
+    background-color: #b9cda9;
+
+}
+
+
+
+
+
+.header-container {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: darkgray;
+   
+   
+    
+}
+
+.header-container a {
+    display: inline-block;
+    background-color: #295740;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: x-large;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+    
+  
+}
+/* Pseudo classe que identifica a posição do cursor do mouse */
+.header-container a:hover{
+
+    background-color: #639482;
+    border: 2px solid greenyellow;
+    color: #fff;
+
+}
+
+.logo{
+    
+    
+    width: 30%;
+    height: 100px;
+    background-color: #acdcc4;
+    color: #fff;
+    
+
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #639482;
+}
+
+.section01{
+   display: none;
+    width: 400px;
+    height: 200px;
+    margin: 10px auto;
+    padding-left: 20px;
+    background-color: blueviolet;
+    color: #fff;
+    border: black dashed 3px;
+    
+ }
+
+
+ .section01--title{
+    margin-bottom: 10px;
+}
+
+.link-lista{
+    
+    font-size: medium;
+    line-height: 30px;
+    
+}
+
+
+
+
+/* Display none: não aparece na tela
+Diplay inline: elementos são em linhas 
+não aceita largura e altura (ocupa apenas o seu espaço)
+Display block: elementos são um abaixo do outro
+aceita largura e altura (ocupa linha inteira)
+Display inline-block: elementos em linha + largura e altura */
