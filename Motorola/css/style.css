@@ -2,5 +2,106 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
    
+}
+
+.main-content {    
+    height: 100vh;        
+    background-color: #ffffff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-motorola { 
+    display: flex;
+    justify-content: center;              
+    width: 100%;
+    height: 650px;           
+    background-color: #ffffff;
+    justify-items:flex-start; 
+    margin: 0 auto;
+}
+
+.card-motorola__foto {
+    width: 100%; 
+    height: 100%;
+}
+
+.secao-texto {
+    width: 50%; 
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secao-texto__titulo{
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.secao-texto__subtitulo{
+    width: 222.89px;
+    height: 37px;
+    font-size: 30px;
+    color: #6CA9F9;
+}
+
+.secao-artigos {
+    display: flex;
+    flex-direction: row; 
+    gap: 40px;          
+    margin-top: 30px;   
+    width: 100%;  
+    width: 650px;
+    height: 152.39px;}
+    
+.secao-artigos__texto1,
+.secao-artigos__texto2 {
+    width: 50%; 
+    flex: 1;
+}
+
+
+.secao-artigos__titulo1,
+.secao-artigos__titulo2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 8px;
+    width: 209.8px;
+    height: 44px;
+}
+
+.secao-artigos__paragrafo1,
+.secao-artigos__paragrafo2 {
+    font-size: 20px;       
+    color: #333333;
+    line-height: 1.5;
+    width: 298.89px;
+    height: 96px;
+}
+
+
+.secao-rodape {
+    margin-top: 40px;
+    width: 650px;
+    height: 104.39px;
+}
+
+.secao-rodape__titulo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+
+    margin-bottom: 8px;
+}
+
+.secao-rodape__texto {
+    font-size: 20px;
+    color: #333333;
+    line-height: 1.5;
 }
