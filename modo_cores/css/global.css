@@ -1,0 +1,105 @@
+/* Importação dos arquivos de estilos */
+@import url(./reset.css);
+@import url(./design-system.css);
+
+/* 3. CSS GLOBAL - LAYOUT, EFEITOS E ESTRUTURA BEM */
+
+/* Bloco principal da seção: ocupa a tela inteira e organiza os filhos lado a lado */
+.color-section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Elemento Sidebar: Barra lateral que contém o titulo e a navegaçâo */
+.color-section__sidebar{
+background-color: #A3B18A;
+width: 250PX;
+}
+
+/* Elemento title: Titulo identificador do modelo de cor atual */
+.color-section__title{
+    color: #FFFFFF;
+    background-color: #9ba784;
+
+}
+
+/* Elemento menu: Container flex vertical para alinhar os botões de navegação */
+.color-section__menu{
+}
+
+/* Elemento link: Estilo base dos botões de navegação */
+.color-section__link{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.color-section__link--active{
+
+}
+
+.color-section__link--active:hover{
+
+}
+
+.color-section__bar{
+
+}
+
+/* RGB */
+
+.color-section__bar--rgb-1{
+background-color: blueviolet;
+width: 15%;
+}
+
+.color-section__bar--rgb-2{
+background-color: rgb(43, 92, 226);
+width: 15%;
+}
+
+.color-section__bar--rgb-3{
+background-color: rgb(43, 226, 67);
+width: 15%;
+}
+
+.color-section__bar--rgb-4{
+background-color: rgb(192, 226, 43);
+width: 15%;
+}
+
+.color-section__bar--rgb-5{
+background-color: rgb(175, 114, 0);
+width: 15%;
+}
+
+.color-section__bar--rgb-6{
+background-color: rgb(226, 110, 43);
+width: 15%;
+}
+
+/* CMYK */
+
+.color-section__bar--cmyk-1{
+
+}
+
+.color-section__bar--cmyk-2{
+
+}
+
+.color-section__bar--cmyk-3{
+
+}
+
+.color-section__bar--cmyk-4{
+
+}
+
+.color-section__bar--cmyk-5{
+
+}
+
+.color-section__bar--cmyk-6{
+    
+}
