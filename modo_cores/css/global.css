@@ -24,7 +24,14 @@
 
 /* Elemento title: Titulo identificador do modelo de cor atual */
 .color-section__title{
-    color: #FFFFFF;
+    color: var(--ui-text-title);
+    font-size: 20px;
+    /* Peso da fonte NÃO utiliza PX */
+    font-weight: 700;
+    margin: 35px;
+    text-align: center;
+    /* Espaço entre as letras */
+    letter-spacing: 0.5px;
 }
 
 /* Elemento menu: Container flex vertical para alinhar os botões de navegação */
