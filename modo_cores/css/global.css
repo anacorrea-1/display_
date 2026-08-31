@@ -56,7 +56,10 @@
 
 /* Modificador Link-Active: Destaque visual aplicado ao botão de seçao corrente */
 .color-section__link--active{
-
+    color: var(--ui-link-active-text);
+    background-color: var(--ui-link-active-bg);
+    /* Sombra V H bluer spread color */
+    box-shadow: 0 1px 6px rgba(244, 244, 248, 0.25);
 }
 
 .color-section__link--active:hover{
