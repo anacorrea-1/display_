@@ -48,8 +48,8 @@
     font-size: 14px;
     /* Peso da fonte NÃO utiliza PX */
     font-weight: 600;
-    padding: 12px 16px;
-    border-radius: 6px;
+    padding: 30px;
+    border-radius: 60px;
     text-align: center;
     transition: all 0.2 ease-in-out;
 }
@@ -73,8 +73,22 @@
     color: var(--ui-text-title);
     background-color: var(--ui-link-hover-bg);
 }
-.color-section__bar{
 
+/* Elemento Bar: Representa as colunas de cores.*/
+.color-section__bar{
+    flex-grow: 1;
+    height: 100%;
+    /* Efeito de transição suave */
+    transition: transform 0.25s ease;
+}
+
+/* Efeito interativo sutil nas barras para enriquecer a experiência */
+.color-section__bar:hover{
+    transform: scaleX(1.02);
+
+    /* Posicionamento do elemento no eixo z (pilha) */
+    z-index: 10;
+    box-shadow: 0 0 30px rgba(51, 50, 50, 0.3);
 }
 
 /* RGB */
