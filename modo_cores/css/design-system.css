@@ -23,4 +23,14 @@
     --color-cmyk-5: #03e6e6; 
     --color-cmyk-6: #d900d9; 
 
+    /* Paleta do Sistema Netflix */
+    --color-net-1: #E50914;
+    --color-net-2: #221F1F;
+    --color-net-3: #F5F5F1;
+
+    /* Paleta do Sistema Google */
+    --color-goo-1: #4285F4;
+    --color-goo-2: #FBBC05;
+    --color-goo-3: #34A853;
+    --color-goo-4: #EA4335;
 }

@@ -118,3 +118,21 @@
 .color-section__bar--cmyk-5 {background-color: var(--color-cmyk-5);}
 
 .color-section__bar--cmyk-6 {background-color: var(--color-cmyk-6);}
+
+/* Netflix */
+
+.color-section__bar--netflix-1 {background-color: var(--color-net-1);}
+
+.color-section__bar--netflix-2 {background-color: var(--color-net-2);}
+
+.color-section__bar--netflix-3 {background-color: var(--color-net-3);}
+
+/* Google */
+
+.color-section__bar--google-1 {background-color: var(--color-goo-1);}
+
+.color-section__bar--google-2 {background-color: var(--color-goo-2);}
+
+.color-section__bar--google-3 {background-color: var(--color-goo-3);}
+
+.color-section__bar--google-4 {background-color: var(--color-goo-4);}
