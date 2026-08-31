@@ -1,0 +1,492 @@
+/* =========================================================
+   RESET BÁSICO
+   ========================================================= */
+
+/*
+    O seletor * seleciona TODOS os elementos da página.
+
+    margin: 0 e padding: 0 removem os espaçamentos
+    que o navegador coloca automaticamente.
+
+    box-sizing: border-box facilita muito o controle
+    de largura e altura dos elementos.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Helvetica, sans-serif;
+}
+
+
+/* =========================================================
+   CONTAINER PRINCIPAL
+   ========================================================= */
+
+.main-content {
+
+    /*
+        min-height é preferível a height neste caso.
+
+        "A seção deve ter pelo menos a altura da tela,
+        mas pode crescer se o conteúdo precisar."
+    */
+    min-height: 100vh;
+
+    background-color: #ffffff;
+
+    /*
+        Ativamos o Flexbox.
+
+        O elemento passa a controlar o posicionamento
+        dos seus filhos através das propriedades flex.
+    */
+    display: flex;
+
+    /*
+        Centraliza o conteúdo horizontalmente.
+    */
+    justify-content: center;
+
+    /*
+        Centraliza o conteúdo verticalmente.
+    */
+    align-items: center;
+
+    /*
+        Adicionamos um pequeno espaço nas laterais.
+
+        Isso evita que o conteúdo encoste na borda
+        em telas menores.
+    */
+    padding: 20px;
+}
+
+
+/* =========================================================
+   CARD PRINCIPAL
+   ========================================================= */
+
+.card-motorola {
+
+    /*
+        O card possui dois filhos principais:
+
+        1. container da imagem
+        2. seção de texto
+
+        display: flex coloca os dois lado a lado.
+    */
+    display: flex;
+
+    /*
+        O card ocupa toda a largura disponível,
+        respeitando o limite definido abaixo.
+    */
+    width: 100%;
+
+    /*
+        Evita que o card fique exageradamente largo
+        em monitores grandes.
+    */
+    max-width: 1300px;
+
+    /*
+        Altura inicial do card.
+    */
+    min-height: 650px;
+
+    background-color: #ffffff;
+
+    /*
+        Garante que os elementos internos
+        não ultrapassem facilmente o card.
+    */
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   ÁREA DA IMAGEM
+   ========================================================= */
+
+.card-motorola__container-foto {
+
+    /*
+        A imagem ocupa metade do card.
+
+        flex: 1 significa:
+
+        "Este elemento pode crescer e ocupar
+        o espaço disponível."
+    */
+    flex: 1;
+
+    /*
+        Impede que a área da imagem fique menor
+        que o necessário.
+    */
+    min-width: 0;
+}
+
+
+/* =========================================================
+   IMAGEM
+   ========================================================= */
+
+.card-motorola__foto {
+
+    /*
+        A imagem ocupa toda a largura do container.
+    */
+    width: 100%;
+
+    /*
+        A imagem ocupa toda a altura disponível.
+    */
+    height: 100%;
+
+    /*
+        Faz a imagem preencher completamente
+        o espaço disponível.
+
+        Caso a proporção da imagem seja diferente
+        do container, algumas partes poderão ser cortadas.
+    */
+    object-fit: cover;
+
+    /*
+        Remove possíveis espaços estranhos causados
+        pelo comportamento inline padrão da imagem.
+    */
+    display: block;
+}
+
+
+/* =========================================================
+   SEÇÃO DE TEXTO
+   ========================================================= */
+
+.secao-texto {
+
+    /*
+        A área de texto também ocupa o espaço disponível.
+    */
+    flex: 1;
+
+    /*
+        Espaçamento interno.
+
+        O conteúdo não fica grudado nas bordas.
+    */
+    padding: 50px;
+
+    /*
+        Transformamos a seção em um Flex Container.
+    */
+    display: flex;
+
+    /*
+        Os elementos serão organizados verticalmente.
+    */
+    flex-direction: column;
+
+    /*
+        Centraliza o conjunto de textos verticalmente.
+    */
+    justify-content: center;
+
+    /*
+        Permite que o conteúdo possa diminuir
+        corretamente dentro do Flexbox.
+    */
+    min-width: 0;
+}
+
+
+/* =========================================================
+   TÍTULO PRINCIPAL
+   ========================================================= */
+
+.secao-texto__titulo {
+
+    /*
+        clamp() permite que o tamanho da fonte
+        seja responsivo.
+
+        36px = tamanho mínimo
+        5vw  = tamanho preferencial
+        50px = tamanho máximo
+    */
+    font-size: clamp(36px, 5vw, 50px);
+
+    font-weight: bold;
+
+    color: #000000;
+
+    /*
+        Melhora a leitura de títulos grandes.
+    */
+    line-height: 1.1;
+}
+
+
+/* =========================================================
+   SUBTÍTULO
+   ========================================================= */
+
+.secao-texto__subtitulo {
+
+    /*
+        Também usamos clamp para permitir
+        adaptação em diferentes telas.
+    */
+    font-size: clamp(24px, 3vw, 30px);
+
+    color: #6CA9F9;
+
+    margin-top: 8px;
+}
+
+
+/* =========================================================
+   ARTIGOS / INFORMAÇÕES
+   ========================================================= */
+
+.secao-artigos {
+
+    /*
+        Os dois blocos ficarão lado a lado.
+    */
+    display: flex;
+
+    /*
+        Direção horizontal.
+    */
+    flex-direction: row;
+
+    /*
+        Espaço entre os dois blocos.
+
+        É preferível ao uso de margin-right
+        em cada elemento.
+    */
+    gap: 40px;
+
+    /*
+        Espaçamento entre o subtítulo e os artigos.
+    */
+    margin-top: 30px;
+}
+
+
+/* =========================================================
+   BLOCO INDIVIDUAL
+   ========================================================= */
+
+.secao-artigos__texto {
+
+    /*
+        Cada bloco pode crescer igualmente.
+
+        Como existem dois blocos:
+
+        bloco 1 → 50%
+        bloco 2 → 50%
+    */
+    flex: 1;
+
+    /*
+        Permite que o texto seja redimensionado
+        corretamente dentro do Flexbox.
+    */
+    min-width: 0;
+}
+
+
+/* =========================================================
+   TÍTULOS DOS ARTIGOS
+   ========================================================= */
+
+.secao-artigos__titulo {
+
+    font-size: 36px;
+
+    font-weight: bold;
+
+    color: #000000;
+
+    margin-bottom: 8px;
+
+    /*
+        Evita que o título fique com uma altura
+        artificialmente fixa.
+    */
+    line-height: 1.1;
+}
+
+
+/* =========================================================
+   PARÁGRAFOS DOS ARTIGOS
+   ========================================================= */
+
+.secao-artigos__paragrafo {
+
+    font-size: 20px;
+
+    color: #333333;
+
+    /*
+        1.5 significa que a altura da linha
+        será aproximadamente 1,5 vezes o tamanho
+        da fonte.
+
+        Isso melhora bastante a leitura.
+    */
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+
+.secao-rodape {
+
+    /*
+        Cria distância entre os artigos
+        e o rodapé.
+    */
+    margin-top: 40px;
+}
+
+
+/* =========================================================
+   TÍTULO DO RODAPÉ
+   ========================================================= */
+
+.secao-rodape__titulo {
+
+    font-size: 36px;
+
+    font-weight: bold;
+
+    color: #000000;
+
+    margin-bottom: 8px;
+
+    line-height: 1.1;
+}
+
+
+/* =========================================================
+   TEXTO DO RODAPÉ
+   ========================================================= */
+
+.secao-rodape__texto {
+
+    font-size: 20px;
+
+    color: #333333;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+/*
+    Quando a tela tiver até 768px de largura,
+    vamos mudar o comportamento do card.
+
+    Essa é uma técnica muito importante
+    para desenvolvimento responsivo.
+*/
+@media (max-width: 768px) {
+
+    .main-content {
+        padding: 0;
+    }
+
+
+    /*
+        No celular, em vez de colocar:
+
+        imagem | texto
+
+        vamos colocar:
+
+        imagem
+        texto
+    */
+    .card-motorola {
+        flex-direction: column;
+
+        /*
+            A altura deixa de ser fixa.
+        */
+        min-height: auto;
+
+        /*
+            Permite que o card ocupe toda a tela.
+        */
+        max-width: 100%;
+    }
+
+
+    /*
+        Definimos uma altura para a imagem
+        no celular.
+    */
+    .card-motorola__container-foto {
+        height: 400px;
+
+        /*
+            flex: none impede que o Flexbox
+            tente redimensionar essa área.
+        */
+        flex: none;
+    }
+
+
+    /*
+        Reduzimos o padding no celular,
+        pois existe menos espaço disponível.
+    */
+    .secao-texto {
+        padding: 40px 25px;
+    }
+
+
+    /*
+        Os dois artigos passam a ficar
+        um embaixo do outro.
+    */
+    .secao-artigos {
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+
+    /*
+        Diminuímos os títulos em telas pequenas.
+    */
+    .secao-artigos__titulo,
+    .secao-rodape__titulo {
+        font-size: 30px;
+    }
+
+
+    /*
+        O texto também fica um pouco menor
+        para melhorar a leitura no celular.
+    */
+    .secao-artigos__paragrafo,
+    .secao-rodape__texto {
+        font-size: 18px;
+    }
+}

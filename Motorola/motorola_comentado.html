@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Faz o layout se adaptar à largura do dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Motorola</title>
+
+    <!-- Importa nosso arquivo CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!--
+        <main> representa o conteúdo principal da página.
+
+        Aqui usamos uma classe para controlar o posicionamento
+        geral do nosso componente.
+    -->
+    <main class="main-content">
+
+        <!--
+            Card principal.
+
+            Ele será dividido em duas partes:
+            1. Imagem
+            2. Informações
+        -->
+        <div class="card-motorola">
+
+            <!-- ==============================
+                 PARTE 1 — IMAGEM
+                 ============================== -->
+
+            <section class="card-motorola__container-foto">
+
+                <!--
+                    A imagem recebe uma classe própria porque
+                    vamos controlar seu tamanho e comportamento
+                    através do CSS.
+                -->
+                <img
+                    src="./img/celular_carregando.webp"
+                    alt="Celular Motorola carregando"
+                    class="card-motorola__foto"
+                >
+
+            </section>
+
+
+            <!-- ==============================
+                 PARTE 2 — INFORMAÇÕES
+                 ============================== -->
+
+            <section class="secao-texto">
+
+                <!--
+                    <header> representa o cabeçalho dessa seção.
+
+                    Aqui ficam o título principal e o subtítulo.
+                -->
+                <header class="secao-texto__cabecalho">
+
+                    <h1 class="secao-texto__titulo">
+                        A maior bateria em um ultrafino
+                    </h1>
+
+                    <p class="secao-texto__subtitulo">
+                        Silício-carbono
+                    </p>
+
+                </header>
+
+
+                <!--
+                    <article> agrupa os dois blocos de informações
+                    sobre a bateria.
+                -->
+                <article class="secao-artigos">
+
+                    <!-- Primeiro bloco de informação -->
+                    <div class="secao-artigos__texto">
+
+                        <h2 class="secao-artigos__titulo">
+                            15 minutos
+                        </h2>
+
+                        <p class="secao-artigos__paragrafo">
+                            Com o carregador TurboPower 68,
+                            você garante bateria para o dia todo
+                            em apenas 15 minutos.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Segundo bloco de informação -->
+                    <div class="secao-artigos__texto">
+
+                        <h2 class="secao-artigos__titulo">
+                            38 horas
+                        </h2>
+
+                        <p class="secao-artigos__paragrafo">
+                            A bateria de 4800 mAh com silício-carbono
+                            oferece até 38 horas de autonomia em um
+                            design ultrafino.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!--
+                    Rodapé da seção.
+
+                    Aqui colocamos a informação adicional
+                    sobre carregamento sem fio.
+                -->
+                <footer class="secao-rodape">
+
+                    <h2 class="secao-rodape__titulo">
+                        Carregue sem fio
+                    </h2>
+
+                    <p class="secao-rodape__texto">
+                        Use carregamento sem fio TurboPower™
+                        de até 15 W⁸ para mais praticidade
+                        no dia a dia.
+                    </p>
+
+                </footer>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
