@@ -13,15 +13,18 @@
 
 /* Elemento Sidebar: Barra lateral que contém o titulo e a navegaçâo */
 .color-section__sidebar{
-background-color: #A3B18A;
-width: 250PX;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 260px;
+    background-color: var(--ui-bg-sidebar);
+    padding: 30px 20px;
+    border-right: 1px solid var(--ui-border);
 }
 
 /* Elemento title: Titulo identificador do modelo de cor atual */
 .color-section__title{
     color: #FFFFFF;
-    background-color: #9ba784;
-
 }
 
 /* Elemento menu: Container flex vertical para alinhar os botões de navegação */
