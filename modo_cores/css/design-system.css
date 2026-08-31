@@ -1,13 +1,12 @@
 :root{
     /* Cores Globais da Interface (Menu Lateral) */
-    --ui-bg-sidebar: #89455a;
-    --ui-border: #6a283e;
+    --ui-bg-sidebar: #2a1a3d;
+    --ui-border: #1a1027;
     --ui-text-title: #ffffff;
-    --ui-text-link: #e699ad;
-    --ui-link-hover-bg: #6a283e;
-    --ui-link-active-bg: #a86176;
-    --ui-link-active-text: #ffffff;
-
+    --ui-text-link: #b09ec4;
+    --ui-link-hover-bg: #3a2654;
+    --ui-link-active-bg: #34d399;
+    --ui-link-active-text: #2a1a3d;
     /* Paleta do Sistema RGB */
     --color-rgb-1: rgb(255, 0, 0);
     --color-rgb-2: rgb(0, 255, 0);

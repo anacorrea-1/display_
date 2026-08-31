@@ -63,6 +63,8 @@
 }
 
 .color-section__link--active:hover{
+    /* Alterar o formato do elemento */
+    transform: scale(1.05);
 
 }
 
@@ -73,57 +75,63 @@
 /* RGB */
 
 .color-section__bar--rgb-1{
-background-color: blueviolet;
+background-color: var(--color-rgb-1);
 width: 15%;
 }
 
 .color-section__bar--rgb-2{
-background-color: rgb(43, 92, 226);
+background-color: var(--color-rgb-2);
 width: 15%;
 }
 
 .color-section__bar--rgb-3{
-background-color: rgb(43, 226, 67);
+background-color: var(--color-rgb-3);
 width: 15%;
 }
 
 .color-section__bar--rgb-4{
-background-color: rgb(192, 226, 43);
+background-color: var(--color-rgb-4);
 width: 15%;
 }
 
 .color-section__bar--rgb-5{
-background-color: rgb(175, 114, 0);
+background-color: var(--color-rgb-5);
 width: 15%;
 }
 
 .color-section__bar--rgb-6{
-background-color: rgb(226, 110, 43);
+background-color: var(--color-rgb-6);
 width: 15%;
 }
 
 /* CMYK */
 
 .color-section__bar--cmyk-1{
-
+    background-color: var(--color-cmyk-1);
+    width: 15%;
 }
 
 .color-section__bar--cmyk-2{
-
+    background-color: var(--color-cmyk-2);
+    width: 15%;
 }
 
 .color-section__bar--cmyk-3{
-
+    background-color: var(--color-cmyk-3);
+    width: 15%;
 }
 
 .color-section__bar--cmyk-4{
-
+    background-color: var(--color-cmyk-4);
+    width: 15%;
 }
 
 .color-section__bar--cmyk-5{
-
+    background-color: var(--color-cmyk-5);
+    width: 15%;
 }
 
 .color-section__bar--cmyk-6{
-    
+    background-color: var(--color-cmyk-6);
+    width: 15%;
 }
