@@ -1,1 +1,6 @@
 @import url(./reset.css);
+
+.brand-card{
+    min-height: 100vh;
+}
+    
