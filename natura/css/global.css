@@ -2,6 +2,34 @@
 @import url(./reset.css);
 @import url(./design-system.css);
 
+.brands{
+    padding: 30px;
+}
+
+.brands__title{
+    
+}
+
 .brands__grid{
     display: flex;
+}
+
+.brand-card{
+
+}
+
+.brand-card__image{
+
+}
+
+.brand-card__title{
+
+}
+
+.brand-card__description{
+
+}
+
+.brand-card__button{
+
 }
