@@ -1,0 +1,49 @@
+
+    <main class="brands">
+
+        <h1 class="brands_title">conheça nossos serviços</h1>
+
+        <section class="brands__grid">
+
+            <!-- Kaiak -->
+            <div class="brand-card"> 
+                
+                <span class="brand-card__image"></span>
+
+                <h2 class="brand-card__title">Kaiak</h2>
+
+                <p class="brand-card__description"></p>
+
+                <button class="brand-card__button">conhecer</button>
+
+            </div>
+
+            <!-- Essencial -->
+            <div class="brand-card">
+                
+                <span class="brand-card__image"></span>
+
+                <h2 class="brand-card__title">Essencial</h2>
+
+                <p class="brand-card__description"></p>
+
+                <button class="brand-card__button">conhecer</button>
+
+            </div>
+
+            <!-- Luna -->
+            <div class="brand-card">
+                
+                <span class="brand-card__image"></span>
+
+                <h2 class="brand-card__title">Luna</h2>
+
+                <p class="brand-card__description"></p>
+
+                <button class="brand-card__button">conhecer</button>
+
+            </div>
+            
+        </section>
+
+    </main>
