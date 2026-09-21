@@ -87,7 +87,26 @@
 .color-section__bar:hover{
     transform: scaleX(1.02);
 
+
     /* Posicionamento do elemento no eixo z (pilha) */
     z-index: 10;
     box-shadow: 0 0 30px rgba(51, 50, 50, 0.3);
+}
+
+/* Wrapper principal do conteúdo á direita da sidebar */
+.color-section__content{
+    height: 100vh;
+    flex-grow: 1;
+    display: flex;
+    flex-direction:column;
+}
+
+.color-section__palette{
+    display: flex;
+    width: 100%;
+    height: 43vh;
+}
+
+.color-section__faq{
+
 }
