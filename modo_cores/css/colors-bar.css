@@ -1,0 +1,67 @@
+/* RGB */
+
+.color-section__bar--rgb-1 {background-color: var(--color-rgb-1);}
+
+.color-section__bar--rgb-2 {background-color: var(--color-rgb-2);}
+
+.color-section__bar--rgb-3 {background-color: var(--color-rgb-3);}
+
+.color-section__bar--rgb-4 {background-color: var(--color-rgb-4);}
+
+.color-section__bar--rgb-5 {background-color: var(--color-rgb-5);}
+
+.color-section__bar--rgb-6 {background-color: var(--color-rgb-6);}
+
+/* CMYK */
+
+.color-section__bar--cmyk-1 {background-color: var(--color-cmyk-1);}
+
+.color-section__bar--cmyk-2 {background-color: var(--color-cmyk-2);}
+
+.color-section__bar--cmyk-3 {background-color: var(--color-cmyk-3);}
+
+.color-section__bar--cmyk-4 {background-color: var(--color-cmyk-4);}
+
+.color-section__bar--cmyk-5 {background-color: var(--color-cmyk-5);}
+
+.color-section__bar--cmyk-6 {background-color: var(--color-cmyk-6);}
+
+/* Netflix */
+
+.color-section__bar--netflix-1 {background-color: var(--color-net-1);}
+
+.color-section__bar--netflix-2 {background-color: var(--color-net-2);}
+
+.color-section__bar--netflix-3 {background-color: var(--color-net-3);}
+
+
+/* Google */
+
+.color-section__bar--google-1 {background-color: var(--color-goo-1);}
+
+.color-section__bar--google-2 {background-color: var(--color-goo-2);}
+
+.color-section__bar--google-3 {background-color: var(--color-goo-3);}
+
+.color-section__bar--google-4 {background-color: var(--color-goo-4);}
+
+
+.color-section__bar--instagram-1{background-color: var(--color-ins-1);}
+
+.color-section__bar--instagram-2{background-color: var(--color-ins-2);}
+
+.color-section__bar--instagram-3{background-color: var(--color-ins-3);}
+
+.color-section__bar--instagram-4{background-color: var(--color-ins-4);}
+
+.color-section__bar--instagram-5{background-color: var(--color-ins-5);}
+
+.color-section__bar--instagram-6{background-color: var(--color-ins-6);}
+
+.color-section__bar--instagram-7{background-color: var(--color-ins-7);}
+
+.color-section__bar--instagram-8{background-color: var(--color-ins-8);}
+
+.color-section__bar--instagram-9{background-color: var(--color-ins-9);}
+
+.color-section__bar--instagram-10{background-color: var(--color-ins-10);}
