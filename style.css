@@ -108,7 +108,34 @@ font-family: Verdana, sans-serif;
 }
 
 
+.faq{
+    border: 2px solid;
+    width: 100%;
+    margin-left: 25px;
+}
 
+.faq details{
+    background: #062218;
+    color: #fff;
+    line-height: 35px;
+    padding: 10px 20px;
+}
+
+.faq summary{
+    background: #295740;
+    border-radius: 12px;
+    padding-left: 15px;
+}
+
+.faq summary :hover{
+    cursor: pointer;
+}
+
+.faq p{
+    color: rgb(221, 218, 53);
+    line-height: 30px;
+    padding-left: 15px;
+}
 
 /* Display none: não aparece na tela
 Diplay inline: elementos são em linhas 
