@@ -125,6 +125,15 @@
 
 }
 
+.color-section__faq-item{
+    background-color: var(--faq-card-bg);
+    border: 1px solid var(--faq-border);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
 .color-section__faq-question{
 
 }
