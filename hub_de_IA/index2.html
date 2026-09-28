@@ -7,19 +7,116 @@
     <title>HUB IA</title>
 
     <style>
-        body {
-            background-color: crimson;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        @media screen and (min-width: 768px) {
+        /* Base style for mobile devices */
+        body {
+            background-color: olive;
+            color: white;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            height: 300vh;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 100%;
+            max-width: 400px;
+            height: 200px;
+            background-color: black;
+        }
+
+
+        .container-position {
+            margin-top: 10px;
+            width: 100%;
+            height: 600px;
+            border: 2px solid blueviolet;
+            position: relative;
+
+        }
+
+        .filho-tamanho {
+            width: 200px;
+            height: 200px;
+            background-color: darkorchid;
+            position: absolute;
+        }
+
+        .container-position__filho01 {
+            top: 0;
+            left: 0;
+        }
+
+        .container-position__filho02 {
+            top: 0;
+            right: 0;
+        }
+
+        .container-position__filho03 {
+            bottom: 0;
+            left: 0;
+        }
+
+        .container-position__filho04 {
+            bottom: 0;
+            right: 0;
+        }
+
+        .whats {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: rgb(3, 223, 76);
+            border: 2px solid #fff;
+ 
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+        }
+
+        .whats img {
+            width: 70px;
+            height: 70px;
+        }
+
+        /* For devices with a minimum width of 768px (Medium) */
+        @media screen and (min-width: 855px) {
             body {
-                background-color: lightgreen;
+                background-color: blue;
+                color: white;
+            }
+
+            .box {
+                width: 45%;
+                max-width: 600px;
             }
         }
 
-        @media screen and (min-width: 480px) {
+        /* For devices with a minimum width of 992px (Large) */
+        @media screen and (min-width: 992px) {
             body {
-                background-color: lightgreen;
+                background-color: rgb(199, 121, 235);
+                color: black;
+            }
+
+            .box {
+                width: 300px;
             }
         }
     </style>
@@ -28,8 +125,24 @@
 
 <body>
 
+    <h1>Testes com CSS @Media Query</h1>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
 
+    <div class="container-position">
+        <div class="container-position__filho01 filho-tamanho"></div>
+        <div class="container-position__filho02 filho-tamanho"></div>
+        <div class="container-position__filho03 filho-tamanho"></div>
+        <div class="container-position__filho04 filho-tamanho"></div>
+    </div>
 
+    <div class="whats">
+        <img src="./img/whatsapp.png" alt="logo do whatsapp">
+    </div>
 </body>
 
 
