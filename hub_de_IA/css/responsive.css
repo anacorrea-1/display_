@@ -1,0 +1,21 @@
+/* Responsividade (media queries) */
+
+/* Smartphones muitos pequenos (até 500px) */
+@media (max-width: 500px){
+
+}
+
+/* Smartphones Médios (501px até 767px) */
+@media(min-width: 501px) and (max-width: 767px){
+
+}
+
+/* Tablets: (768px até 1023px) */
+@media (min-width: 768px) and (max-width: 1023px){
+
+}
+
+/* Desktops (até 1024px) */
+@media (min-width: 1024px) {
+
+}
